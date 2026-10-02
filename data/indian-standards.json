@@ -131,14 +131,14 @@
       "Relevant certification or testing evidence"
     ],
     "authority": "Bureau of Indian Standards (BIS)",
-    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
-    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "certificationStatus": "BIS certification no longer compulsory",
+    "qcoStatus": "De-notified from compulsory BIS certification by the FSS (Prohibition and Restrictions on Sales) First Amendment Regulations, 2024.",
     "sourceType": "Official BIS source",
-    "sourceUrl": "https://lims.bis.gov.in/",
-    "notes": "Current BIS LIMS information lists IS 14543:2024 for packaged drinking water.",
-    "mandatory": true,
-    "scheme": "ISI Mark (Scheme I)",
-    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)"
+    "sourceUrl": "https://www.fssai.gov.in/",
+    "notes": "BIS lists this product as de-notified from compulsory certification. FSSAI now treats packaged water as a high-risk food with mandatory inspection and testing.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification",
+    "regulatoryBasis": "FSSAI licence plus the FSSAI testing scheme for packaged water (from January 2026). The IS standard is still the product specification."
   },
   {
     "isNumber": "IS 2347:2023",
@@ -204,7 +204,7 @@
     "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text."
   },
   {
-    "isNumber": "IS 302 (Part 1)",
+    "isNumber": "IS 302 (Part 1):2024",
     "title": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements",
     "productCategory": "Electrical Appliances",
     "keywords": [
@@ -226,7 +226,7 @@
     "scope": "General safety requirements for household and similar electrical appliances. The appliance-specific Part 2 of IS 302 applies together with Part 1.",
     "requirements": [
       "Product requirements, tests and marking should be verified against the current edition of the standard.",
-      "Check whether certification is mandatory for your exact product before launch."
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
     ],
     "evidenceNeeded": [
       "Product specification",
@@ -236,16 +236,17 @@
     ],
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
-    "notes": "Several appliances covered by IS 302 Part 2 sections are under compulsory certification. Identify the Part 2 for your appliance and check the current QCO.",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
-    "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)",
-    "regulatoryBasis": "None identified",
-    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+    "notes": "Applies to the appliances listed in the QCO (e.g. vacuum cleaners, ovens, food processors, coffee makers). Irons, immersion heaters, stoves and room heaters were already compulsory under the 2003 Electrical QCO via IS 302 Part 2 sections.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO: Household, Commercial and Similar Electrical Appliances (Quality Control) Order, enforced from 1 October 2026 for the listed appliances",
+    "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text.",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
-    "isNumber": "IS 16102 (Part 1)",
+    "isNumber": "IS 16102 (Part 1):2012",
     "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
     "productCategory": "Electrical Appliances",
     "keywords": [
@@ -432,8 +433,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
-    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
-    "enterpriseRelief": "Check the QCO for MSME transition dates.",
+    "regulatoryBasis": "QCO: Electrical Appliances for Domestic Water Heating (Quality Control) Order",
+    "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -468,7 +469,7 @@
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
-    "isNumber": "IS 13252 (Part 1)",
+    "isNumber": "IS 13252 (Part 1):2010",
     "title": "Information Technology Equipment - Safety - Part 1: General Requirements",
     "productCategory": "Electronics",
     "keywords": [
@@ -478,9 +479,11 @@
       "computer",
       "tablet",
       "printer",
-      "router",
+      "power bank",
       "adapter",
       "charger",
+      "cctv camera",
+      "keyboard",
       "mobile charger",
       "power adapter",
       "smart watch",
@@ -508,7 +511,7 @@
     "sourceUrl": "https://www.crsbis.in/BIS/"
   },
   {
-    "isNumber": "IS 616",
+    "isNumber": "IS 616:2017",
     "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements",
     "productCategory": "Electronics",
     "keywords": [
@@ -517,9 +520,9 @@
       "speaker",
       "bluetooth speaker",
       "amplifier",
-      "set top box",
       "audio system",
-      "home theatre"
+      "wireless earphone",
+      "headphone"
     ],
     "scope": "Safety requirements for audio, video and similar electronic apparatus.",
     "requirements": [
@@ -543,7 +546,7 @@
     "sourceUrl": "https://www.crsbis.in/BIS/"
   },
   {
-    "isNumber": "IS 16046 (Part 2)",
+    "isNumber": "IS 16046 (Part 2):2018",
     "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Safety Requirements - Part 2: Lithium Systems",
     "productCategory": "Electronics",
     "keywords": [
@@ -586,7 +589,7 @@
     "scope": "Packaged natural mineral water.",
     "requirements": [
       "Product requirements, tests and marking should be verified against the current edition of the standard.",
-      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+      "Check whether certification is mandatory for your exact product before launch."
     ],
     "evidenceNeeded": [
       "Product specification",
@@ -596,14 +599,13 @@
     ],
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
-    "notes": "Requires both BIS certification and an FSSAI licence.",
-    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
-    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
-    "mandatory": true,
-    "scheme": "ISI Mark (Scheme I)",
-    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
-    "enterpriseRelief": "Check the QCO for MSME transition dates.",
-    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+    "notes": "BIS lists this product as de-notified from compulsory certification. FSSAI now treats packaged water as a high-risk food with mandatory inspection and testing.",
+    "certificationStatus": "BIS certification no longer compulsory",
+    "qcoStatus": "De-notified from compulsory BIS certification by the FSS (Prohibition and Restrictions on Sales) First Amendment Regulations, 2024.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification",
+    "regulatoryBasis": "FSSAI licence plus the FSSAI testing scheme for packaged water (from January 2026). The IS standard is still the product specification.",
+    "sourceUrl": "https://www.fssai.gov.in/"
   },
   {
     "isNumber": "IS 1011",
@@ -1097,7 +1099,7 @@
     ],
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
-    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "notes": "Under the Steel and Steel Products QCO. Many steel QCO entries were suspended or withdrawn in November 2025, so check the current status with the Ministry of Steel.",
     "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
@@ -1336,7 +1338,7 @@
       "safety boot",
       "industrial shoe"
     ],
-    "scope": "Safety footwear for industrial use.",
+    "scope": "Safety footwear for industrial use. Footwear QCO deadlines have been extended (to July 2027 for some provisions), so check the current dates.",
     "requirements": [
       "Product requirements, tests and marking should be verified against the current edition of the standard.",
       "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
@@ -1483,7 +1485,7 @@
     ],
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
-    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "notes": "Under the Steel and Steel Products QCO. Many steel QCO entries were suspended or withdrawn in November 2025, so check the current status with the Ministry of Steel.",
     "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
@@ -1515,7 +1517,7 @@
     ],
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
-    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "notes": "Steel tube and fastener QCOs were listed for withdrawal in November 2025. Verify before claiming any mandatory status.",
     "certificationStatus": "Verification Required",
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
