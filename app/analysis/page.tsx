@@ -39,6 +39,9 @@ type ScaleInfo = {
   label: string;
   summary: string;
   requirements: ScaleRequirement[];
+  basis?: string;
+  msmeClass?: string;
+  fssaiTier?: string;
 };
 
 type AnalysisResult = {
@@ -237,6 +240,12 @@ function AnalysisPageContent() {
   const manufacturerType =
     searchParams.get("manufacturerType") || "";
 
+  const turnover =
+    searchParams.get("turnover") || "";
+
+  const investment =
+    searchParams.get("investment") || "";
+
   /* =======================================================
      RUN ANALYSIS
      ======================================================= */
@@ -276,6 +285,8 @@ function AnalysisPageContent() {
               description,
               intendedUse,
               manufacturerType,
+              turnover,
+              investment,
             }),
           });
 
@@ -300,6 +311,16 @@ function AnalysisPageContent() {
         }
 
         setResult(data);
+
+        // Shared with the Compliance Passport page.
+        try {
+          sessionStorage.setItem(
+            "glc_analysis_result",
+            JSON.stringify(data)
+          );
+        } catch {
+          // Storage can be unavailable (private mode).
+        }
       } catch (err) {
         console.error(
           "Analysis page error:",
@@ -323,6 +344,8 @@ function AnalysisPageContent() {
     description,
     intendedUse,
     manufacturerType,
+    turnover,
+    investment,
   ]);
 
   /* =======================================================
@@ -687,7 +710,7 @@ function AnalysisPageContent() {
               </h2>
 
               <p className="mt-2 text-sm leading-6 text-slate-600">
-                These standards were retrieved from the project's
+                These standards were retrieved from the project&apos;s
                 Indian Standards knowledge base. Applicability and
                 current requirements must be verified with the
                 official authority.
@@ -896,6 +919,12 @@ function AnalysisPageContent() {
                     Requirements for {result.scale.label}
                   </h2>
 
+                  {result.scale.basis && (
+                    <p className="mt-2 text-sm font-semibold leading-6 text-slate-800">
+                      {result.scale.basis}
+                    </p>
+                  )}
+
                   <p className="mt-2 text-sm leading-6 text-slate-600">
                     {result.scale.summary}
                   </p>
@@ -993,7 +1022,7 @@ function AnalysisPageContent() {
                 Important:
               </strong>{" "}
               This is AI-assisted preliminary guidance based on the
-              project's Indian Standards knowledge base. It is not
+              project&apos;s Indian Standards knowledge base. It is not
               legal or regulatory advice. Always verify applicable
               requirements, current editions, amendments, QCOs and
               certification requirements with the relevant official

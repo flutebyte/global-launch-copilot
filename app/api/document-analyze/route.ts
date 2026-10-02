@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 MB
 
-function json(data: any, status = 200) {
+function json(data: unknown, status = 200) {
   return NextResponse.json(data, {
     status,
     headers: {
@@ -272,12 +272,12 @@ ${file.name}
       fileType: mimeType,
       fileSize: file.size,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("DOCUMENT ANALYZE ERROR:", error);
 
     let message = "Document analysis failed.";
 
-    if (error?.message) {
+    if (error instanceof Error && error.message) {
       message = error.message;
     }
 

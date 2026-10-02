@@ -305,7 +305,7 @@ function DocumentsPageContent() {
                 Upload a certificate, test report, product
                 specification, label, or other technical document.
                 The document can then be reviewed against the
-                product's identified Indian Standards requirements.
+                product&apos;s identified Indian Standards requirements.
               </p>
             </div>
 

@@ -16,6 +16,21 @@ type Requirement = {
   evidence: string;
 };
 
+type SavedStandard = {
+  isNumber: string;
+  title: string;
+  mandatory?: boolean;
+  regulatoryBasis?: string;
+};
+
+type SavedAnalysis = {
+  standards?: SavedStandard[];
+  scale?: {
+    label: string;
+    requirements: { title: string; detail: string }[];
+  };
+};
+
 function PassportPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -30,9 +45,12 @@ function PassportPageContent() {
     searchParams.get("origin") || "India";
 
   const market =
-    searchParams.get("market") || "United States";
+    searchParams.get("market") || "India";
 
   const [documentAnalysis, setDocumentAnalysis] = useState("");
+
+  const [standardsAnalysis, setStandardsAnalysis] =
+    useState<SavedAnalysis | null>(null);
   const [showAnalysis, setShowAnalysis] = useState(false);
 
   /*
@@ -45,6 +63,19 @@ function PassportPageContent() {
 
     if (savedAnalysis) {
       setDocumentAnalysis(savedAnalysis);
+    }
+
+    // Standards and scale results saved by the Analysis page.
+    try {
+      const savedStandards = sessionStorage.getItem(
+        "glc_analysis_result"
+      );
+
+      if (savedStandards) {
+        setStandardsAnalysis(JSON.parse(savedStandards));
+      }
+    } catch {
+      // Ignore unreadable or unavailable storage.
     }
   }, []);
 
@@ -71,13 +102,45 @@ function PassportPageContent() {
         status: "Verification Required",
         evidence: "Market requirement evidence",
       },
-      {
-        title: "Testing & Certification",
-        description:
-          "Applicable testing or certification requirements need to be confirmed for the specific product.",
-        status: "Verification Required",
-        evidence: "Applicable test reports / certificates",
-      },
+      ...((standardsAnalysis?.standards || []).map(
+        (standard): Requirement => ({
+          title: `${standard.isNumber}: ${standard.title}`,
+          description: standard.mandatory
+            ? standard.isNumber.startsWith("IS")
+              ? `BIS certification mandatory. Basis: ${standard.regulatoryBasis || "QCO / CRS"}.`
+              : `Legally required. Basis: ${standard.regulatoryBasis || standard.title}.`
+            : `Applicable standard. BIS certification: Voluntary / Verification Required. Basis: ${standard.regulatoryBasis || "None identified"}.`,
+          status: standard.mandatory
+            ? "Missing"
+            : "Verification Required",
+          evidence: standard.mandatory
+            ? standard.isNumber.startsWith("IS")
+              ? "BIS licence / registration certificate"
+              : "Licence / registration / label evidence"
+            : "Test report against the standard",
+        })
+      )),
+      ...((standardsAnalysis?.scale?.requirements || [])
+        .slice(0, 4)
+        .map(
+          (item): Requirement => ({
+            title: item.title,
+            description: item.detail,
+            status: "Verification Required",
+            evidence: "Registration / licence document",
+          })
+        )),
+      ...(standardsAnalysis
+        ? []
+        : [
+            {
+              title: "Testing & Certification",
+              description:
+                "Run the standards analysis to list the applicable Indian Standards and certification requirements.",
+              status: "Verification Required" as RequirementStatus,
+              evidence: "Applicable test reports / certificates",
+            },
+          ]),
       {
         title: "Product Documentation",
         description: documentAnalysis
@@ -91,7 +154,7 @@ function PassportPageContent() {
           : "Product documents",
       },
     ];
-  }, [product, market, documentAnalysis]);
+  }, [product, market, documentAnalysis, standardsAnalysis]);
 
   /*
    * Calculate dashboard numbers.
@@ -645,7 +708,7 @@ function PassportPageContent() {
 
             <div className="space-y-4">
 
-              {roadmap.map((step, index) => (
+              {roadmap.map((step) => (
 
                 <div
                   key={step.number}

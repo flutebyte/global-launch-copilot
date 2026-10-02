@@ -7,11 +7,8 @@ import { useSearchParams } from "next/navigation";
 function FounderBridgePageContent() {
   const params = useSearchParams();
 
-  const product = params.get("product") || "Cotton T-Shirt";
-  const category =
-    params.get("category") || "Clothing & Apparel";
   const market =
-    params.get("market") || "United States";
+    params.get("market") || "India";
 
   const [industry, setIndustry] = useState("");
   const [stage, setStage] = useState("");
@@ -417,7 +414,7 @@ function FounderBridgePageContent() {
                 setMatched(false);
               }}
               rows={4}
-              placeholder="Example: I want to understand how to enter the US market."
+              placeholder="Example: I need help getting BIS certification for my product."
               className="mt-2 w-full resize-none rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
             />
 

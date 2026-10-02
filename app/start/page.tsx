@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import categories from "@/data/categories.json";
 
@@ -12,6 +13,8 @@ export default function StartPage() {
   const [description, setDescription] = useState("");
   const [intendedUse, setIntendedUse] = useState("");
   const [manufacturerType, setManufacturerType] = useState("");
+  const [turnover, setTurnover] = useState("");
+  const [investment, setInvestment] = useState("");
 
   const [error, setError] = useState("");
 
@@ -38,6 +41,10 @@ export default function StartPage() {
       manufacturerType,
     });
 
+    // Optional figures in Rs crore. Used for exact MSME and FSSAI tiers.
+    if (turnover) params.set("turnover", turnover);
+    if (investment) params.set("investment", investment);
+
     router.push(`/analysis?${params.toString()}`);
   };
 
@@ -46,7 +53,7 @@ export default function StartPage() {
       {/* Header */}
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-          <a href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-sm font-bold text-white">
               GL
             </div>
@@ -59,14 +66,14 @@ export default function StartPage() {
                 Standards & Compliance Copilot
               </div>
             </div>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/"
             className="text-sm font-semibold text-slate-600 transition hover:text-blue-600"
           >
             ← Home
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -226,6 +233,55 @@ export default function StartPage() {
                       Individual / New Founder
                     </option>
                   </select>
+                </div>
+
+                {/* Turnover / investment (optional) */}
+                <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <label
+                      htmlFor="turnover"
+                      className="text-sm font-bold text-slate-800"
+                    >
+                      Annual Turnover (Rs crore, optional)
+                    </label>
+
+                    <input
+                      id="turnover"
+                      type="number"
+                      min="0"
+                      step="0.01"
+                      value={turnover}
+                      onChange={(e) => setTurnover(e.target.value)}
+                      placeholder="e.g. 0.8"
+                      className="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-50"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="investment"
+                      className="text-sm font-bold text-slate-800"
+                    >
+                      Investment in Plant &amp; Machinery (Rs crore, optional)
+                    </label>
+
+                    <input
+                      id="investment"
+                      type="number"
+                      min="0"
+                      step="0.01"
+                      value={investment}
+                      onChange={(e) => setInvestment(e.target.value)}
+                      placeholder="e.g. 0.5"
+                      className="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-50"
+                    />
+                  </div>
+
+                  <p className="text-xs text-slate-500 sm:col-span-2">
+                    With both figures the MSME class is worked out exactly.
+                    Turnover also decides the FSSAI registration or licence
+                    tier for food products.
+                  </p>
                 </div>
 
                 {/* Error */}

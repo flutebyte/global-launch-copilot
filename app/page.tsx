@@ -178,12 +178,12 @@ export default function Home() {
                       Market Analysis
                     </p>
                     <h2 className="mt-1 text-xl font-bold text-slate-900">
-                      Cotton T-Shirt
+                      LED Bulb (9W)
                     </h2>
                   </div>
 
                   <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">
-                    India → USA
+                    India
                   </span>
                 </div>
 
@@ -191,29 +191,28 @@ export default function Home() {
                   <div className="rounded-xl border border-slate-200 p-4">
                     <div className="flex items-center justify-between">
                       <span className="text-sm font-semibold text-slate-800">
-                        Textile labeling
+                        IS 16102 (Part 1):2012
                       </span>
-                      <span className="text-xs font-semibold text-amber-600">
-                        Verify
+                      <span className="text-xs font-semibold text-red-600">
+                        Mandatory
                       </span>
                     </div>
                     <p className="mt-2 text-xs leading-5 text-slate-500">
-                      Check applicable labeling information and supporting
-                      evidence.
+                      BIS Compulsory Registration (CRS) - mandatory for LED lamps.
                     </p>
                   </div>
 
                   <div className="rounded-xl border border-slate-200 p-4">
                     <div className="flex items-center justify-between">
                       <span className="text-sm font-semibold text-slate-800">
-                        Care labeling
+                        Udyam + GST registration
                       </span>
                       <span className="text-xs font-semibold text-amber-600">
                         Verify
                       </span>
                     </div>
                     <p className="mt-2 text-xs leading-5 text-slate-500">
-                      Review care instructions for the specific garment.
+                      Requirements matched to your manufacturing scale.
                     </p>
                   </div>
 
@@ -405,9 +404,9 @@ export default function Home() {
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <div className="space-y-3">
                 {[
-                  ["Product", "Cotton T-Shirt"],
+                  ["Product", "LED Bulb (9W)"],
                   ["Origin", "India"],
-                  ["Target Market", "United States"],
+                  ["Target Market", "India"],
                   ["Requirements", "6 areas to verify"],
                   ["Evidence", "Documents + test reports"],
                   ["Next Step", "Resolve verification gaps"],

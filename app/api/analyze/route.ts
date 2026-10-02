@@ -47,6 +47,9 @@ type ScaleInfo = {
   label: string;
   summary: string;
   requirements: ScaleRequirement[];
+  msmeClass?: string;
+  fssaiTier?: string;
+  basis: string;
 };
 
 const standards = indianStandards as Standard[];
@@ -59,7 +62,7 @@ const MAX_GENERAL_STANDARDS = 3;
   (name, keyword or description match) to be shown.
   Category alone is never enough.
 */
-const MIN_PRODUCT_SCORE = 10;
+const MIN_PRODUCT_SCORE = 13;
 
 /* =========================================================
    TEXT NORMALIZATION
@@ -283,16 +286,63 @@ function retrieveStandards(
    SCALE (SMALL / MEDIUM / LARGE) REQUIREMENTS
    ========================================================= */
 
+/*
+  MSME class needs BOTH limits (investment and turnover,
+  Rs crore, effective 1 April 2025).
+*/
+function classifyMsme(
+  investment: number,
+  turnover: number
+) {
+  if (investment <= 2.5 && turnover <= 10) return "Micro";
+  if (investment <= 25 && turnover <= 100) return "Small";
+  if (investment <= 125 && turnover <= 500) return "Medium";
+  return "Not MSME (large)";
+}
+
+/*
+  FSSAI tier depends on food turnover only, not on MSME
+  class (thresholds effective 1 April 2026).
+*/
+function fssaiTier(turnover: number) {
+  if (turnover <= 1.5) return "FSSAI Registration (turnover up to Rs 1.5 crore)";
+  if (turnover <= 50) return "FSSAI State Licence (turnover above Rs 1.5 crore up to Rs 50 crore)";
+  return "FSSAI Central Licence (turnover above Rs 50 crore)";
+}
+
 function getScaleRequirements(
   manufacturerType: string,
-  category: string
+  category: string,
+  turnover: number | null,
+  investment: number | null
 ): ScaleInfo {
-  const scale = ((
+  let scale = ((
     scaleData.manufacturerTypeToScale as Record<
       string,
       string
     >
   )[manufacturerType] || "small") as ScaleKey;
+
+  let msmeClass: string | undefined;
+  let basis = `Based on the selected manufacturer type (${manufacturerType || "not given"}).`;
+
+  if (turnover !== null && investment !== null) {
+    msmeClass = classifyMsme(investment, turnover);
+    scale =
+      msmeClass === "Medium"
+        ? "medium"
+        : msmeClass.startsWith("Not")
+          ? "large"
+          : "small";
+    basis = `MSME class worked out from investment Rs ${investment} crore and turnover Rs ${turnover} crore: ${msmeClass}.`;
+  } else if (turnover !== null || investment !== null) {
+    basis += " Enter both turnover and investment to work out the exact MSME class.";
+  }
+
+  const fssai =
+    category === "Food & Beverages" && turnover !== null
+      ? fssaiTier(turnover)
+      : undefined;
 
   const scaleMeta = scaleData.scales[scale];
 
@@ -312,11 +362,27 @@ function getScaleRequirements(
       Number(b.categories.includes("*"))
   );
 
+  if (fssai) {
+    requirements.unshift({
+      title: `Your FSSAI tier: ${fssai}`,
+      detail: `Worked out from the annual turnover you entered (Rs ${turnover} crore). Apply on FoSCoS. Registrations and licences now have perpetual validity.`,
+      authority: "Food Safety and Standards Authority of India (FSSAI)",
+      sourceUrl: "https://foscos.fssai.gov.in/",
+      scales: [scale],
+      categories: [category],
+    });
+  }
+
   return {
     scale,
-    label: scaleMeta.label,
+    label: msmeClass
+      ? `${scaleMeta.label} - MSME: ${msmeClass}`
+      : scaleMeta.label,
     summary: scaleMeta.summary,
     requirements,
+    msmeClass,
+    fssaiTier: fssai,
+    basis,
   };
 }
 
@@ -369,6 +435,8 @@ function formatScaleSection(scaleInfo: ScaleInfo) {
     .join("\n");
 
   return `## Requirements for Your Scale (${scaleInfo.label})
+
+${scaleInfo.basis}
 
 ${scaleInfo.summary}
 
@@ -558,6 +626,7 @@ INDIAN STANDARDS EVIDENCE:
 ${evidence || "No product-specific standard was retrieved."}
 
 SCALE REQUIREMENTS EVIDENCE:
+${scaleInfo.basis}
 ${scaleInfo.summary}
 ${scaleEvidence}
 
@@ -800,6 +869,21 @@ export async function POST(
         body?.manufacturerType || ""
       ).trim();
 
+    const toNumber = (value: unknown) => {
+      const n = Number(value);
+      return value === undefined ||
+        value === null ||
+        value === "" ||
+        !Number.isFinite(n) ||
+        n < 0
+        ? null
+        : n;
+    };
+
+    const turnover = toNumber(body?.turnover);
+
+    const investment = toNumber(body?.investment);
+
     console.log("Analyze request:", {
       product,
       category,
@@ -840,7 +924,9 @@ export async function POST(
 
     const scaleInfo = getScaleRequirements(
       manufacturerType,
-      category
+      category,
+      turnover,
+      investment
     );
 
     const matchedStandards = [

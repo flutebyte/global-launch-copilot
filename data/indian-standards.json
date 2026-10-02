@@ -219,6 +219,13 @@
       "hair dryer",
       "induction cooktop",
       "electric stove",
+      "vacuum cleaner",
+      "coffee maker",
+      "food processor",
+      "dishwasher",
+      "air purifier",
+      "deep fryer",
+      "oven",
       "household appliance",
       "electrical appliance",
       "home appliance"
@@ -1435,7 +1442,9 @@
       "electric toy",
       "battery toy",
       "remote control toy",
-      "rc car"
+      "remote control car",
+      "rc car",
+      "toy car"
     ],
     "scope": "Safety requirements for toys with at least one electrical function.",
     "requirements": [
