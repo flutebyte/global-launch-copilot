@@ -16,10 +16,27 @@ type Standard = {
   authority?: string;
   certificationStatus?: string;
   qcoStatus?: string;
+  mandatory?: boolean;
+  scheme?: string;
+  general?: boolean;
   notes?: string;
   sourceType?: string;
   sourceUrl?: string;
   score?: number;
+};
+
+type ScaleRequirement = {
+  title: string;
+  detail: string;
+  authority?: string;
+  sourceUrl?: string;
+};
+
+type ScaleInfo = {
+  scale: string;
+  label: string;
+  summary: string;
+  requirements: ScaleRequirement[];
 };
 
 type AnalysisResult = {
@@ -28,6 +45,12 @@ type AnalysisResult = {
   standards?: Standard[];
   matchedStandards?: Standard[];
   standardsCount?: number;
+  generalCount?: number;
+  scale?: ScaleInfo;
+  engine?: {
+    retrieval?: string;
+    reasoning?: string;
+  };
   aiGenerated?: boolean;
   aiError?: boolean;
   product?: string;
@@ -583,9 +606,9 @@ function AnalysisPageContent() {
                 </div>
 
                 <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
-                  Local AI has analyzed the retrieved Indian
-                  Standards and generated preliminary compliance
-                  guidance.
+                  {result.aiGenerated
+                    ? "AI has analyzed the retrieved Indian Standards and scale requirements and generated preliminary compliance guidance."
+                    : "Showing guidance built directly from the Indian Standards knowledge base and scale requirements."}
                 </p>
 
                 <div className="mt-3 flex flex-wrap gap-2">
@@ -594,8 +617,15 @@ function AnalysisPageContent() {
                   </span>
 
                   <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700">
-                    Local Qwen AI
+                    {result.engine?.reasoning ||
+                      "Rule-based"}
                   </span>
+
+                  {result.scale && (
+                    <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">
+                      {result.scale.label}
+                    </span>
+                  )}
                 </div>
               </div>
 
@@ -696,11 +726,31 @@ function AnalysisPageContent() {
                           </h3>
                         </div>
 
-                        <StatusBadge>
-                          {standard.certificationStatus ||
-                            "Verification Required"}
-                        </StatusBadge>
+                        <div className="flex flex-wrap gap-2 sm:justify-end">
+                          {standard.general && (
+                            <span className="inline-flex rounded-full bg-slate-200 px-3 py-1 text-xs font-bold text-slate-700">
+                              General requirement
+                            </span>
+                          )}
+
+                          {standard.mandatory ? (
+                            <span className="inline-flex rounded-full bg-red-50 px-3 py-1 text-xs font-bold text-red-700">
+                              Compulsory
+                            </span>
+                          ) : (
+                            <StatusBadge>
+                              {standard.certificationStatus ||
+                                "Verification Required"}
+                            </StatusBadge>
+                          )}
+                        </div>
                       </div>
+
+                      {standard.scheme && (
+                        <p className="mt-3 text-xs font-semibold text-slate-600">
+                          Scheme: {standard.scheme}
+                        </p>
+                      )}
 
                       {standard.scope && (
                         <div className="mt-5">
@@ -790,6 +840,65 @@ function AnalysisPageContent() {
               </div>
             )}
           </div>
+
+          {/* =================================================
+              SCALE REQUIREMENTS
+              ================================================= */}
+
+          {result.scale &&
+            result.scale.requirements.length > 0 && (
+              <div className="mb-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+                <div className="mb-6">
+                  <p className="text-sm font-bold text-blue-700">
+                    Manufacturing Scale
+                  </p>
+
+                  <h2 className="mt-1 text-2xl font-bold text-slate-900">
+                    Requirements for {result.scale.label}
+                  </h2>
+
+                  <p className="mt-2 text-sm leading-6 text-slate-600">
+                    {result.scale.summary}
+                  </p>
+                </div>
+
+                <div className="grid gap-4 md:grid-cols-2">
+                  {result.scale.requirements.map(
+                    (requirement) => (
+                      <div
+                        key={requirement.title}
+                        className="rounded-2xl border border-slate-200 bg-slate-50 p-5"
+                      >
+                        <h3 className="text-base font-bold text-slate-900">
+                          {requirement.title}
+                        </h3>
+
+                        <p className="mt-2 text-sm leading-6 text-slate-700">
+                          {requirement.detail}
+                        </p>
+
+                        {requirement.authority && (
+                          <p className="mt-3 text-xs font-semibold text-slate-500">
+                            {requirement.authority}
+                          </p>
+                        )}
+
+                        {requirement.sourceUrl && (
+                          <a
+                            href={requirement.sourceUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="mt-3 inline-block text-sm font-bold text-blue-700 hover:text-blue-800"
+                          >
+                            Official site →
+                          </a>
+                        )}
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+            )}
 
           {/* =================================================
               NEXT STEPS

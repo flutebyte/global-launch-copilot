@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import categories from "@/data/categories.json";
 
 export default function StartPage() {
   const router = useRouter();
@@ -139,27 +140,11 @@ export default function StartPage() {
                     className="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-50"
                   >
                     <option value="">Select a category</option>
-                    <option value="Electrical Appliances">
-                      Electrical Appliances
-                    </option>
-                    <option value="Electronics">Electronics</option>
-                    <option value="Clothing & Apparel">
-                      Clothing & Apparel
-                    </option>
-                    <option value="Food & Beverages">
-                      Food & Beverages
-                    </option>
-                    <option value="Cosmetics">Cosmetics</option>
-                    <option value="Medical Products">
-                      Medical Products
-                    </option>
-                    <option value="Construction Materials">
-                      Construction Materials
-                    </option>
-                    <option value="Manufacturing">
-                      Manufacturing
-                    </option>
-                    <option value="Other">Other</option>
+                    {categories.map((item) => (
+                      <option key={item} value={item}>
+                        {item}
+                      </option>
+                    ))}
                   </select>
                 </div>
 

@@ -33,7 +33,9 @@
     "qcoStatus": "Verification Required",
     "sourceType": "Official BIS source",
     "sourceUrl": "https://www.bis.gov.in/know-your-standard/?lang=en",
-    "notes": "BIS lists IS 4375:2019 as Men's cotton knitted T-shirts. Verify the current standard details and applicability through the official BIS portal."
+    "notes": "BIS lists IS 4375:2019 as Men's cotton knitted T-shirts. Verify the current standard details and applicability through the official BIS portal.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)"
   },
   {
     "isNumber": "IS 13003:2024",
@@ -63,7 +65,9 @@
     "qcoStatus": "Verification Required",
     "sourceType": "Official BIS source",
     "sourceUrl": "https://standards.bis.gov.in/",
-    "notes": "BIS lists IS 13003:2024 for cotton interlock knitted fabric. Applicability to a finished garment should be verified."
+    "notes": "BIS lists IS 13003:2024 for cotton interlock knitted fabric. Applicability to a finished garment should be verified.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)"
   },
   {
     "isNumber": "IS 15798 (Part 2):2021",
@@ -97,7 +101,10 @@
     "qcoStatus": "Verification Required",
     "sourceType": "Official BIS source",
     "sourceUrl": "https://standards.bis.gov.in/",
-    "notes": "BIS standard information references IS 15798 (Part 2):2021 for fabrics, apparels and made-up items consumer textiles."
+    "notes": "BIS standard information references IS 15798 (Part 2):2021 for fabrics, apparels and made-up items consumer textiles.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "general": true
   },
   {
     "isNumber": "IS 14543:2024",
@@ -107,8 +114,7 @@
       "packaged drinking water",
       "drinking water",
       "bottled water",
-      "packaged water",
-      "water"
+      "packaged water"
     ],
     "scope": "This standard relates to packaged drinking water other than packaged natural mineral water.",
     "requirements": [
@@ -122,11 +128,13 @@
       "Relevant certification or testing evidence"
     ],
     "authority": "Bureau of Indian Standards (BIS)",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "Verification Required",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "sourceType": "Official BIS source",
     "sourceUrl": "https://lims.bis.gov.in/",
-    "notes": "Current BIS LIMS information lists IS 14543:2024 for packaged drinking water."
+    "notes": "Current BIS LIMS information lists IS 14543:2024 for packaged drinking water.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)"
   },
   {
     "isNumber": "IS 2347:2023",
@@ -149,11 +157,13 @@
       "Product marking information"
     ],
     "authority": "Bureau of Indian Standards (BIS)",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "Verification Required",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "sourceType": "Official BIS source",
     "sourceUrl": "https://lims.bis.gov.in/",
-    "notes": "Current BIS LIMS information lists IS 2347:2023 for domestic pressure cookers."
+    "notes": "Current BIS LIMS information lists IS 2347:2023 for domestic pressure cookers.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)"
   },
   {
     "isNumber": "IS 2925:1984",
@@ -182,6 +192,1366 @@
     "qcoStatus": "Verification Required",
     "sourceType": "Official BIS source",
     "sourceUrl": "https://lims.bis.gov.in/",
-    "notes": "This standard is specifically associated with industrial safety helmets and should not be matched to ordinary clothing."
+    "notes": "This standard is specifically associated with industrial safety helmets and should not be matched to ordinary clothing.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)"
+  },
+  {
+    "isNumber": "IS 302 (Part 1)",
+    "title": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements",
+    "productCategory": "Electrical Appliances",
+    "keywords": [
+      "electric iron",
+      "iron box",
+      "immersion heater",
+      "room heater",
+      "electric kettle",
+      "mixer",
+      "mixer grinder",
+      "toaster",
+      "hair dryer",
+      "induction cooktop",
+      "electric stove",
+      "household appliance",
+      "electrical appliance",
+      "home appliance"
+    ],
+    "scope": "General safety requirements for household and similar electrical appliances. The appliance-specific Part 2 of IS 302 applies together with Part 1.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Several appliances covered by IS 302 Part 2 sections are under compulsory certification. Identify the Part 2 for your appliance and check the current QCO.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 16102 (Part 1)",
+    "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements",
+    "productCategory": "Electrical Appliances",
+    "keywords": [
+      "led bulb",
+      "led lamp",
+      "led light",
+      "self ballasted led"
+    ],
+    "scope": "Safety requirements for self-ballasted LED lamps for general lighting.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory registration (BIS CRS) - verify current order",
+    "qcoStatus": "Covered by the Compulsory Registration Scheme (CRS) order. Each brand and model must be registered after testing at a BIS-recognised lab.",
+    "mandatory": true,
+    "scheme": "Compulsory Registration Scheme (Scheme II)",
+    "sourceUrl": "https://www.crsbis.in/BIS/"
+  },
+  {
+    "isNumber": "IS 1293",
+    "title": "Plugs and Socket-Outlets of Rated Voltage up to and including 250 Volts and Rated Current up to and including 16 Amperes",
+    "productCategory": "Electrical Appliances",
+    "keywords": [
+      "plug",
+      "socket",
+      "socket outlet",
+      "plug socket",
+      "power socket"
+    ],
+    "scope": "Plugs and socket-outlets for household and similar use.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 3854",
+    "title": "Switches for Domestic and Similar Purposes",
+    "productCategory": "Electrical Appliances",
+    "keywords": [
+      "switch",
+      "electrical switch",
+      "wall switch",
+      "modular switch"
+    ],
+    "scope": "Switches for domestic and similar fixed electrical installations.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 694",
+    "title": "PVC Insulated Unsheathed and Sheathed Cables/Cords with Rigid and Flexible Conductor for Rated Voltages up to and including 450/750 V",
+    "productCategory": "Electrical Appliances",
+    "keywords": [
+      "cable",
+      "wire",
+      "electrical wire",
+      "pvc cable",
+      "house wire",
+      "flexible cord"
+    ],
+    "scope": "PVC insulated cables and cords for electrical installations.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 374",
+    "title": "Electric Ceiling Type Fans and Regulators",
+    "productCategory": "Electrical Appliances",
+    "keywords": [
+      "ceiling fan",
+      "fan regulator",
+      "electric fan"
+    ],
+    "scope": "Electric ceiling type fans and their regulators.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Check BEE star labelling requirements for ceiling fans in addition to BIS.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 2082",
+    "title": "Stationary Storage Type Electric Water Heaters",
+    "productCategory": "Electrical Appliances",
+    "keywords": [
+      "water heater",
+      "geyser",
+      "storage water heater"
+    ],
+    "scope": "Stationary storage type electric water heaters for domestic use.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 1391 (Part 1)",
+    "title": "Room Air Conditioners - Part 1: Unitary Air Conditioners",
+    "productCategory": "Electrical Appliances",
+    "keywords": [
+      "air conditioner",
+      "window ac",
+      "room air conditioner"
+    ],
+    "scope": "Unitary room air conditioners.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Check BEE star labelling and any QCO covering air conditioners and their components.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 13252 (Part 1)",
+    "title": "Information Technology Equipment - Safety - Part 1: General Requirements",
+    "productCategory": "Electronics",
+    "keywords": [
+      "mobile phone",
+      "smartphone",
+      "laptop",
+      "computer",
+      "tablet",
+      "printer",
+      "router",
+      "adapter",
+      "charger",
+      "mobile charger",
+      "power adapter",
+      "smart watch",
+      "it equipment"
+    ],
+    "scope": "Safety of information technology equipment including mobile phones, laptops, adapters and similar products.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory registration (BIS CRS) - verify current order",
+    "qcoStatus": "Covered by the Compulsory Registration Scheme (CRS) order. Each brand and model must be registered after testing at a BIS-recognised lab.",
+    "mandatory": true,
+    "scheme": "Compulsory Registration Scheme (Scheme II)",
+    "sourceUrl": "https://www.crsbis.in/BIS/"
+  },
+  {
+    "isNumber": "IS 616",
+    "title": "Audio, Video and Similar Electronic Apparatus - Safety Requirements",
+    "productCategory": "Electronics",
+    "keywords": [
+      "television",
+      "tv",
+      "speaker",
+      "bluetooth speaker",
+      "amplifier",
+      "set top box",
+      "audio system",
+      "home theatre"
+    ],
+    "scope": "Safety requirements for audio, video and similar electronic apparatus.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory registration (BIS CRS) - verify current order",
+    "qcoStatus": "Covered by the Compulsory Registration Scheme (CRS) order. Each brand and model must be registered after testing at a BIS-recognised lab.",
+    "mandatory": true,
+    "scheme": "Compulsory Registration Scheme (Scheme II)",
+    "sourceUrl": "https://www.crsbis.in/BIS/"
+  },
+  {
+    "isNumber": "IS 16046 (Part 2)",
+    "title": "Secondary Cells and Batteries Containing Alkaline or Other Non-Acid Electrolytes - Safety Requirements - Part 2: Lithium Systems",
+    "productCategory": "Electronics",
+    "keywords": [
+      "lithium battery",
+      "li-ion battery",
+      "lithium ion",
+      "battery pack",
+      "rechargeable battery"
+    ],
+    "scope": "Safety requirements for portable sealed secondary lithium cells and batteries.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory registration (BIS CRS) - verify current order",
+    "qcoStatus": "Covered by the Compulsory Registration Scheme (CRS) order. Each brand and model must be registered after testing at a BIS-recognised lab.",
+    "mandatory": true,
+    "scheme": "Compulsory Registration Scheme (Scheme II)",
+    "sourceUrl": "https://www.crsbis.in/BIS/"
+  },
+  {
+    "isNumber": "IS 13428",
+    "title": "Packaged Natural Mineral Water - Specification",
+    "productCategory": "Food & Beverages",
+    "keywords": [
+      "mineral water",
+      "natural mineral water",
+      "packaged mineral water"
+    ],
+    "scope": "Packaged natural mineral water.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Requires both BIS certification and an FSSAI licence.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 1011",
+    "title": "Biscuits - Specification",
+    "productCategory": "Food & Beverages",
+    "keywords": [
+      "biscuit",
+      "cookie",
+      "cracker"
+    ],
+    "scope": "Requirements for biscuits.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Food products are regulated mainly by FSSAI. Check the FSS (Food Products Standards and Food Additives) Regulations for your product.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "FSSAI Licence / Registration",
+    "title": "Food Business Operator Licensing and Registration - FSS (Licensing and Registration of Food Businesses) Regulations, 2011",
+    "productCategory": "Food & Beverages",
+    "general": true,
+    "keywords": [
+      "food",
+      "snack",
+      "beverage",
+      "spices",
+      "pickle",
+      "sweets",
+      "namkeen",
+      "juice",
+      "bakery"
+    ],
+    "scope": "Every food manufacturer must hold FSSAI Basic Registration, a State Licence or a Central Licence depending on turnover and capacity.",
+    "requirements": [
+      "Apply on the FSSAI FoSCoS portal before starting production.",
+      "The licence tier depends on turnover and production capacity (see the scale requirements).",
+      "Display the FSSAI licence number on the label."
+    ],
+    "evidenceNeeded": [
+      "Premises details and layout",
+      "List of food products",
+      "Water test report for the unit",
+      "Food Safety Management System plan"
+    ],
+    "authority": "Food Safety and Standards Authority of India (FSSAI)",
+    "certificationStatus": "Mandatory for all food businesses",
+    "qcoStatus": "Not a BIS QCO. Mandatory under the Food Safety and Standards Act, 2006.",
+    "mandatory": true,
+    "scheme": "FSSAI",
+    "sourceType": "Official FSSAI source",
+    "sourceUrl": "https://foscos.fssai.gov.in/",
+    "notes": "Product-specific composition standards are in the FSS (Food Products Standards and Food Additives) Regulations, 2011."
+  },
+  {
+    "isNumber": "FSS (Labelling and Display) Regulations, 2020",
+    "title": "Food Safety and Standards (Labelling and Display) Regulations, 2020",
+    "productCategory": "Food & Beverages",
+    "general": true,
+    "keywords": [
+      "food label",
+      "food packaging",
+      "nutrition label"
+    ],
+    "scope": "Labelling requirements for pre-packaged food: name, ingredients, nutrition information, veg/non-veg symbol, FSSAI logo and licence number, dates and allergen information.",
+    "requirements": [
+      "Prepare the label as per the regulation before printing packaging."
+    ],
+    "evidenceNeeded": [
+      "Label artwork",
+      "Nutrition test report",
+      "Ingredient list"
+    ],
+    "authority": "Food Safety and Standards Authority of India (FSSAI)",
+    "certificationStatus": "Mandatory for pre-packaged food",
+    "qcoStatus": "Not a BIS QCO. Mandatory under FSSAI regulations.",
+    "mandatory": true,
+    "scheme": "FSSAI",
+    "sourceType": "Official FSSAI source",
+    "sourceUrl": "https://www.fssai.gov.in/",
+    "notes": "Verify the latest amendments on the FSSAI website."
+  },
+  {
+    "isNumber": "IS 4707 (Part 2)",
+    "title": "Classification of Cosmetic Raw Materials and Adjuncts - Part 2: List of Raw Materials Generally Not Recognized as Safe for Use in Cosmetics",
+    "productCategory": "Cosmetics",
+    "keywords": [
+      "cosmetic",
+      "cosmetics",
+      "beauty product",
+      "skin care",
+      "personal care"
+    ],
+    "scope": "Raw materials that should not be used in cosmetic products.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Cosmetics also need a manufacturing licence under the Cosmetics Rules, 2020 (Drugs and Cosmetics Act). BIS standards under these rules are referenced for product quality.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/",
+    "general": true
+  },
+  {
+    "isNumber": "IS 6608",
+    "title": "Skin Creams - Specification",
+    "productCategory": "Cosmetics",
+    "keywords": [
+      "skin cream",
+      "face cream",
+      "moisturiser",
+      "moisturizer",
+      "cold cream",
+      "lotion"
+    ],
+    "scope": "Requirements for skin creams.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 6356",
+    "title": "Toothpastes - Specification",
+    "productCategory": "Cosmetics",
+    "keywords": [
+      "toothpaste",
+      "tooth paste"
+    ],
+    "scope": "Requirements for toothpastes.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 7884",
+    "title": "Shampoo, Synthetic Detergent Based - Specification",
+    "productCategory": "Cosmetics",
+    "keywords": [
+      "shampoo"
+    ],
+    "scope": "Requirements for synthetic detergent based shampoos.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 2888",
+    "title": "Toilet Soap - Specification",
+    "productCategory": "Cosmetics",
+    "keywords": [
+      "soap",
+      "toilet soap",
+      "bathing soap",
+      "bath soap"
+    ],
+    "scope": "Requirements for toilet soaps.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "Cosmetics Rules, 2020",
+    "title": "Cosmetics Manufacturing Licence - Cosmetics Rules, 2020 under the Drugs and Cosmetics Act, 1940",
+    "productCategory": "Cosmetics",
+    "general": true,
+    "keywords": [
+      "cosmetic manufacturing",
+      "cosmetic licence"
+    ],
+    "scope": "A licence from the State Licensing Authority is required to manufacture cosmetics for sale or distribution.",
+    "requirements": [
+      "Apply to the State Licensing Authority through the CDSCO online portal.",
+      "Maintain premises, equipment and a competent technical person as required by the rules."
+    ],
+    "evidenceNeeded": [
+      "Premises plan",
+      "List of products and formulations",
+      "Technical staff qualifications",
+      "Test reports"
+    ],
+    "authority": "State Licensing Authority / CDSCO",
+    "certificationStatus": "Mandatory manufacturing licence",
+    "qcoStatus": "Not a BIS QCO. Mandatory under the Drugs and Cosmetics Act, 1940.",
+    "mandatory": true,
+    "scheme": "Cosmetics licence",
+    "sourceType": "Official CDSCO source",
+    "sourceUrl": "https://cdsco.gov.in/",
+    "notes": "Verify current forms and fees on the CDSCO / SUGAM portal."
+  },
+  {
+    "isNumber": "Medical Devices Rules, 2017",
+    "title": "Medical Device Manufacturing Licence - Medical Devices Rules, 2017",
+    "productCategory": "Medical Products",
+    "general": true,
+    "keywords": [
+      "medical device",
+      "medical equipment",
+      "diagnostic",
+      "surgical"
+    ],
+    "scope": "Medical devices are classified into Class A, B, C and D by risk. Class A and B manufacturing licences come from the State Licensing Authority; Class C and D from CDSCO (Central Licensing Authority).",
+    "requirements": [
+      "Determine the risk class of the device.",
+      "Implement a quality management system (IS/ISO 13485).",
+      "Apply for the manufacturing licence on the CDSCO portal."
+    ],
+    "evidenceNeeded": [
+      "Device master file",
+      "Plant master file",
+      "IS/ISO 13485 certificate or QMS records",
+      "Test reports"
+    ],
+    "authority": "Central Drugs Standard Control Organisation (CDSCO)",
+    "certificationStatus": "Mandatory manufacturing licence",
+    "qcoStatus": "Not a BIS QCO. Mandatory under the Drugs and Cosmetics Act, 1940.",
+    "mandatory": true,
+    "scheme": "CDSCO licence",
+    "sourceType": "Official CDSCO source",
+    "sourceUrl": "https://cdsco.gov.in/",
+    "notes": "Verify the current classification list for your device."
+  },
+  {
+    "isNumber": "IS/ISO 13485",
+    "title": "Medical Devices - Quality Management Systems - Requirements for Regulatory Purposes",
+    "productCategory": "Medical Products",
+    "keywords": [
+      "medical device quality",
+      "qms",
+      "iso 13485"
+    ],
+    "scope": "Quality management system requirements for organisations that design or manufacture medical devices.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/",
+    "general": true
+  },
+  {
+    "isNumber": "IS 16289",
+    "title": "Medical Textiles - Medical Face Masks - Specification",
+    "productCategory": "Medical Products",
+    "keywords": [
+      "face mask",
+      "surgical mask",
+      "medical mask"
+    ],
+    "scope": "Requirements for medical face masks.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 13422",
+    "title": "Disposable Surgical Rubber Gloves - Specification",
+    "productCategory": "Medical Products",
+    "keywords": [
+      "surgical gloves",
+      "rubber gloves",
+      "examination gloves",
+      "latex gloves"
+    ],
+    "scope": "Requirements for disposable sterile surgical rubber gloves.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 269",
+    "title": "Ordinary Portland Cement - Specification",
+    "productCategory": "Construction Materials",
+    "keywords": [
+      "cement",
+      "opc",
+      "portland cement",
+      "opc 43",
+      "opc 53",
+      "opc 33"
+    ],
+    "scope": "Ordinary Portland cement of 33, 43 and 53 grades.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 1489 (Part 1)",
+    "title": "Portland Pozzolana Cement - Specification - Part 1: Fly Ash Based",
+    "productCategory": "Construction Materials",
+    "keywords": [
+      "ppc",
+      "pozzolana cement",
+      "fly ash cement"
+    ],
+    "scope": "Fly ash based Portland pozzolana cement.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 1786",
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement - Specification",
+    "productCategory": "Construction Materials",
+    "keywords": [
+      "tmt",
+      "tmt bar",
+      "steel bar",
+      "rebar",
+      "reinforcement bar",
+      "saria"
+    ],
+    "scope": "High strength deformed steel bars and wires for concrete reinforcement.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 1077",
+    "title": "Common Burnt Clay Building Bricks - Specification",
+    "productCategory": "Construction Materials",
+    "keywords": [
+      "brick",
+      "clay brick",
+      "red brick"
+    ],
+    "scope": "Common burnt clay building bricks.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 2185 (Part 1)",
+    "title": "Concrete Masonry Units - Part 1: Hollow and Solid Concrete Blocks",
+    "productCategory": "Construction Materials",
+    "keywords": [
+      "concrete block",
+      "cement block",
+      "hollow block",
+      "solid block",
+      "paver"
+    ],
+    "scope": "Hollow and solid concrete blocks for masonry.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 4985",
+    "title": "Unplasticized PVC Pipes for Water Supplies - Specification",
+    "productCategory": "Construction Materials",
+    "keywords": [
+      "pvc pipe",
+      "upvc pipe",
+      "water pipe"
+    ],
+    "scope": "Unplasticized PVC pipes for potable water supply.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 303",
+    "title": "Plywood for General Purposes - Specification",
+    "productCategory": "Construction Materials",
+    "keywords": [
+      "plywood",
+      "ply board"
+    ],
+    "scope": "Plywood for general purposes.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 4246",
+    "title": "Domestic Gas Stoves for Use with Liquefied Petroleum Gases - Specification",
+    "productCategory": "Household Products",
+    "keywords": [
+      "gas stove",
+      "lpg stove",
+      "cooking stove",
+      "gas burner"
+    ],
+    "scope": "Domestic gas stoves for use with LPG.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 1660",
+    "title": "Wrought Aluminium Utensils - Specification",
+    "productCategory": "Household Products",
+    "keywords": [
+      "aluminium utensil",
+      "aluminum utensil",
+      "aluminium cookware",
+      "kadai",
+      "utensil"
+    ],
+    "scope": "Wrought aluminium utensils.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 4151",
+    "title": "Protective Helmets for Two-Wheeler Riders - Specification",
+    "productCategory": "Safety Equipment",
+    "keywords": [
+      "two wheeler helmet",
+      "bike helmet",
+      "motorcycle helmet",
+      "scooter helmet",
+      "riding helmet"
+    ],
+    "scope": "Protective helmets for riders of two-wheeled motor vehicles.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 15298 (Part 2)",
+    "title": "Personal Protective Equipment - Part 2: Safety Footwear",
+    "productCategory": "Safety Equipment",
+    "keywords": [
+      "safety shoe",
+      "safety footwear",
+      "safety boot",
+      "industrial shoe"
+    ],
+    "scope": "Safety footwear for industrial use.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 15683",
+    "title": "Portable Fire Extinguishers - Performance and Construction - Specification",
+    "productCategory": "Safety Equipment",
+    "keywords": [
+      "fire extinguisher",
+      "portable extinguisher"
+    ],
+    "scope": "Portable fire extinguishers.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 9873 (Part 1)",
+    "title": "Safety of Toys - Part 1: Safety Aspects Related to Mechanical and Physical Properties",
+    "productCategory": "Toys",
+    "keywords": [
+      "toy",
+      "toys",
+      "soft toy",
+      "plastic toy",
+      "wooden toy",
+      "kids toy",
+      "doll",
+      "puzzle"
+    ],
+    "scope": "Mechanical and physical safety requirements for toys for children up to 14 years.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Other parts of IS 9873 (flammability, migration of certain elements, etc.) also apply under the Toys QCO.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+    "general": true
+  },
+  {
+    "isNumber": "IS 15644",
+    "title": "Safety of Electric Toys",
+    "productCategory": "Toys",
+    "keywords": [
+      "electric toy",
+      "battery toy",
+      "remote control toy",
+      "rc car"
+    ],
+    "scope": "Safety requirements for toys with at least one electrical function.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 2062",
+    "title": "Hot Rolled Medium and High Tensile Structural Steel - Specification",
+    "productCategory": "Manufacturing",
+    "keywords": [
+      "structural steel",
+      "steel plate",
+      "steel sheet",
+      "ms plate",
+      "steel angle",
+      "steel channel",
+      "fabrication"
+    ],
+    "scope": "Hot rolled structural steel plates, sections and bars.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "isNumber": "IS 1239 (Part 1)",
+    "title": "Steel Tubes, Tubulars and Other Wrought Steel Fittings - Part 1: Steel Tubes",
+    "productCategory": "Manufacturing",
+    "keywords": [
+      "steel tube",
+      "ms pipe",
+      "gi pipe",
+      "steel pipe"
+    ],
+    "scope": "Mild steel tubes for water, gas, air and steam.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS 1367",
+    "title": "Technical Supply Conditions for Threaded Steel Fasteners",
+    "productCategory": "Manufacturing",
+    "keywords": [
+      "bolt",
+      "nut",
+      "screw",
+      "fastener",
+      "stud",
+      "washer"
+    ],
+    "scope": "Technical supply conditions for threaded steel fasteners.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+  },
+  {
+    "isNumber": "IS/ISO 9001",
+    "title": "Quality Management Systems - Requirements",
+    "productCategory": "Manufacturing",
+    "keywords": [
+      "quality management",
+      "iso 9001",
+      "qms",
+      "manufacturing unit",
+      "factory"
+    ],
+    "scope": "Quality management system requirements for any organisation.",
+    "requirements": [
+      "Product requirements, tests and marking should be verified against the current edition of the standard.",
+      "Check whether certification is mandatory for your exact product before launch."
+    ],
+    "evidenceNeeded": [
+      "Product specification",
+      "Relevant test reports from a BIS-recognised lab",
+      "Material information",
+      "Product marking and label information"
+    ],
+    "authority": "Bureau of Indian Standards (BIS)",
+    "sourceType": "Official BIS source",
+    "notes": "Not product certification. Often required for supplying to large buyers and government tenders.",
+    "certificationStatus": "Verification Required",
+    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
+    "mandatory": false,
+    "scheme": "Voluntary ISI certification (verify)",
+    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/",
+    "general": true
+  },
+  {
+    "isNumber": "Legal Metrology (Packaged Commodities) Rules, 2011",
+    "title": "Declarations on Pre-Packaged Commodities - Legal Metrology (Packaged Commodities) Rules, 2011",
+    "productCategory": "All",
+    "general": true,
+    "keywords": [
+      "packaged",
+      "packaging",
+      "pre-packaged",
+      "mrp",
+      "label"
+    ],
+    "scope": "Every pre-packaged product sold in India must declare manufacturer/packer name and address, net quantity, MRP, month and year of manufacture, and consumer care details.",
+    "requirements": [
+      "Register as a manufacturer/packer with the Legal Metrology department where required.",
+      "Print the mandatory declarations on every package."
+    ],
+    "evidenceNeeded": [
+      "Label artwork",
+      "Packer registration certificate"
+    ],
+    "authority": "Department of Consumer Affairs - Legal Metrology",
+    "certificationStatus": "Mandatory for pre-packaged goods",
+    "qcoStatus": "Not a BIS QCO. Mandatory under the Legal Metrology Act, 2009.",
+    "mandatory": true,
+    "scheme": "Legal Metrology",
+    "sourceType": "Official government source",
+    "sourceUrl": "https://consumeraffairs.nic.in/organisation-and-units/division/legal-metrology",
+    "notes": "Applies across categories whenever the product is sold pre-packed."
   }
 ]
