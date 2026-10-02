@@ -19,6 +19,8 @@ type Standard = {
   qcoStatus?: string;
   mandatory?: boolean;
   scheme?: string;
+  regulatoryBasis?: string;
+  enterpriseRelief?: string;
   general?: boolean;
   notes?: string;
   sourceType?: string;
@@ -322,6 +324,22 @@ function getScaleRequirements(
    FALLBACK ANALYSIS
    ========================================================= */
 
+/*
+  An IS number existing does not make certification
+  mandatory. Only a QCO / CRS order (or another law) does.
+*/
+function certificationLabel(standard: Standard) {
+  if (standard.mandatory) {
+    return "Mandatory";
+  }
+
+  if (standard.mandatory === false) {
+    return "Voluntary / Verification Required";
+  }
+
+  return "Verification Required";
+}
+
 function formatStandardLine(
   standard: MatchedStandard
 ) {
@@ -330,9 +348,15 @@ function formatStandardLine(
     standard.scope ||
     "Product applicability should be verified."
   }
-  - Status: ${
-    standard.certificationStatus ||
-    "Verification Required"
+  - BIS certification: ${certificationLabel(standard)}
+  - Regulatory basis: ${
+    standard.regulatoryBasis ||
+    standard.qcoStatus ||
+    "None identified - verify"
+  }${
+    standard.enterpriseRelief
+      ? `\n  - Enterprise relief: ${standard.enterpriseRelief}`
+      : ""
   }`;
 }
 
@@ -485,9 +509,11 @@ Certification: ${
           standard.certificationStatus ||
           "Verification Required"
         }
-QCO: ${
+BIS certification: ${certificationLabel(standard)}
+Regulatory basis: ${
+          standard.regulatoryBasis ||
           standard.qcoStatus ||
-          "Verification Required"
+          "None identified"
         }`
     )
     .join("\n\n");
@@ -509,7 +535,8 @@ IMPORTANT:
 - Do NOT explain your instructions or repeat the user prompt.
 - Use ONLY the supplied Indian Standards evidence and scale requirements.
 - Never invent an IS number, standard or BIS requirement.
-- Never claim certification is mandatory unless the supplied evidence explicitly says so.
+- Never claim certification is mandatory unless the supplied evidence says "BIS certification: Mandatory".
+- An Indian Standard applying to a product does not by itself make BIS certification mandatory.
 - If something cannot be confirmed, write "Verification Required".
 
 PRODUCT:
@@ -544,7 +571,8 @@ For each standard:
 - **IS number:** ...
 - **Title:** ...
 - **Why relevant:** ...
-- **Status:** ...
+- **BIS certification:** Mandatory / Voluntary / Verification Required (copy from evidence)
+- **Regulatory basis:** ...
 
 ## Requirements for Your Scale (${scaleInfo.label})
 - ...

@@ -35,7 +35,8 @@
     "sourceUrl": "https://www.bis.gov.in/know-your-standard/?lang=en",
     "notes": "BIS lists IS 4375:2019 as Men's cotton knitted T-shirts. Verify the current standard details and applicability through the official BIS portal.",
     "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)"
+    "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified - verify"
   },
   {
     "isNumber": "IS 13003:2024",
@@ -67,7 +68,8 @@
     "sourceUrl": "https://standards.bis.gov.in/",
     "notes": "BIS lists IS 13003:2024 for cotton interlock knitted fabric. Applicability to a finished garment should be verified.",
     "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)"
+    "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified - verify"
   },
   {
     "isNumber": "IS 15798 (Part 2):2021",
@@ -104,6 +106,7 @@
     "notes": "BIS standard information references IS 15798 (Part 2):2021 for fabrics, apparels and made-up items consumer textiles.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified - verify",
     "general": true
   },
   {
@@ -134,7 +137,8 @@
     "sourceUrl": "https://lims.bis.gov.in/",
     "notes": "Current BIS LIMS information lists IS 14543:2024 for packaged drinking water.",
     "mandatory": true,
-    "scheme": "ISI Mark (Scheme I)"
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)"
   },
   {
     "isNumber": "IS 2347:2023",
@@ -163,7 +167,8 @@
     "sourceUrl": "https://lims.bis.gov.in/",
     "notes": "Current BIS LIMS information lists IS 2347:2023 for domestic pressure cookers.",
     "mandatory": true,
-    "scheme": "ISI Mark (Scheme I)"
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)"
   },
   {
     "isNumber": "IS 2925:1984",
@@ -188,13 +193,15 @@
       "Product marking information"
     ],
     "authority": "Bureau of Indian Standards (BIS)",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "Verification Required",
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "sourceType": "Official BIS source",
-    "sourceUrl": "https://lims.bis.gov.in/",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
     "notes": "This standard is specifically associated with industrial safety helmets and should not be matched to ordinary clothing.",
-    "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)"
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO: Industrial safety helmets QCO",
+    "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text."
   },
   {
     "isNumber": "IS 302 (Part 1)",
@@ -234,6 +241,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -264,6 +272,7 @@
     "qcoStatus": "Covered by the Compulsory Registration Scheme (CRS) order. Each brand and model must be registered after testing at a BIS-recognised lab.",
     "mandatory": true,
     "scheme": "Compulsory Registration Scheme (Scheme II)",
+    "regulatoryBasis": "CRS order (applies only to the notified product categories, e.g. laptops, tablets, TVs, speakers; confirm your exact product is notified)",
     "sourceUrl": "https://www.crsbis.in/BIS/"
   },
   {
@@ -295,6 +304,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -325,6 +336,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -357,21 +370,23 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
-    "isNumber": "IS 374",
-    "title": "Electric Ceiling Type Fans and Regulators",
+    "isNumber": "IS 374:2019",
+    "title": "Electric Ceiling Type Fans",
     "productCategory": "Electrical Appliances",
     "keywords": [
       "ceiling fan",
       "fan regulator",
       "electric fan"
     ],
-    "scope": "Electric ceiling type fans and their regulators.",
+    "scope": "Electric ceiling type fans.",
     "requirements": [
       "Product requirements, tests and marking should be verified against the current edition of the standard.",
-      "Check whether certification is mandatory for your exact product before launch."
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
     ],
     "evidenceNeeded": [
       "Product specification",
@@ -382,11 +397,13 @@
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
     "notes": "Check BEE star labelling requirements for ceiling fans in addition to BIS.",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
-    "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)",
-    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO: Electric Ceiling Type Fans (Quality Control) Order, 2023 (amended 2026)",
+    "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text.",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
     "isNumber": "IS 2082",
@@ -415,10 +432,12 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
-    "isNumber": "IS 1391 (Part 1)",
+    "isNumber": "IS 1391 (Part 1):2023",
     "title": "Room Air Conditioners - Part 1: Unitary Air Conditioners",
     "productCategory": "Electrical Appliances",
     "keywords": [
@@ -429,7 +448,7 @@
     "scope": "Unitary room air conditioners.",
     "requirements": [
       "Product requirements, tests and marking should be verified against the current edition of the standard.",
-      "Check whether certification is mandatory for your exact product before launch."
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
     ],
     "evidenceNeeded": [
       "Product specification",
@@ -440,11 +459,13 @@
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
     "notes": "Check BEE star labelling and any QCO covering air conditioners and their components.",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
-    "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)",
-    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO: Air Conditioner and its Related Parts (Quality Control) Order",
+    "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text.",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
     "isNumber": "IS 13252 (Part 1)",
@@ -483,6 +504,7 @@
     "qcoStatus": "Covered by the Compulsory Registration Scheme (CRS) order. Each brand and model must be registered after testing at a BIS-recognised lab.",
     "mandatory": true,
     "scheme": "Compulsory Registration Scheme (Scheme II)",
+    "regulatoryBasis": "CRS order (applies only to the notified product categories, e.g. laptops, tablets, TVs, speakers; confirm your exact product is notified)",
     "sourceUrl": "https://www.crsbis.in/BIS/"
   },
   {
@@ -517,6 +539,7 @@
     "qcoStatus": "Covered by the Compulsory Registration Scheme (CRS) order. Each brand and model must be registered after testing at a BIS-recognised lab.",
     "mandatory": true,
     "scheme": "Compulsory Registration Scheme (Scheme II)",
+    "regulatoryBasis": "CRS order (applies only to the notified product categories, e.g. laptops, tablets, TVs, speakers; confirm your exact product is notified)",
     "sourceUrl": "https://www.crsbis.in/BIS/"
   },
   {
@@ -548,6 +571,7 @@
     "qcoStatus": "Covered by the Compulsory Registration Scheme (CRS) order. Each brand and model must be registered after testing at a BIS-recognised lab.",
     "mandatory": true,
     "scheme": "Compulsory Registration Scheme (Scheme II)",
+    "regulatoryBasis": "CRS order (applies only to the notified product categories, e.g. laptops, tablets, TVs, speakers; confirm your exact product is notified)",
     "sourceUrl": "https://www.crsbis.in/BIS/"
   },
   {
@@ -577,6 +601,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -606,6 +632,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -624,7 +651,7 @@
       "juice",
       "bakery"
     ],
-    "scope": "Every food manufacturer must hold FSSAI Basic Registration, a State Licence or a Central Licence depending on turnover and capacity.",
+    "scope": "Every food manufacturer must hold FSSAI Registration (turnover up to Rs 1.5 crore), a State Licence (above Rs 1.5 crore to Rs 50 crore) or a Central Licence (above Rs 50 crore), as revised from 1 April 2026.",
     "requirements": [
       "Apply on the FSSAI FoSCoS portal before starting production.",
       "The licence tier depends on turnover and production capacity (see the scale requirements).",
@@ -702,6 +729,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/",
     "general": true
   },
@@ -735,6 +763,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -763,6 +792,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -790,6 +820,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -820,6 +851,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -910,6 +942,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/",
     "general": true
   },
@@ -940,6 +973,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -970,6 +1004,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -1002,6 +1037,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -1031,6 +1068,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -1063,10 +1102,12 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
-    "isNumber": "IS 1077",
+    "isNumber": "IS 1077:2025",
     "title": "Common Burnt Clay Building Bricks - Specification",
     "productCategory": "Construction Materials",
     "keywords": [
@@ -1092,6 +1133,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -1123,6 +1165,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -1152,10 +1195,11 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
-    "isNumber": "IS 303",
+    "isNumber": "IS 303:2024",
     "title": "Plywood for General Purposes - Specification",
     "productCategory": "Construction Materials",
     "keywords": [
@@ -1165,7 +1209,7 @@
     "scope": "Plywood for general purposes.",
     "requirements": [
       "Product requirements, tests and marking should be verified against the current edition of the standard.",
-      "Check whether certification is mandatory for your exact product before launch."
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
     ],
     "evidenceNeeded": [
       "Product specification",
@@ -1176,15 +1220,17 @@
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
     "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
-    "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)",
-    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO: Plywood and Wooden Flush Door Shutters (Quality Control) Order, with phased dates by enterprise size",
+    "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text.",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
-    "isNumber": "IS 4246",
-    "title": "Domestic Gas Stoves for Use with Liquefied Petroleum Gases - Specification",
+    "isNumber": "IS 4246:2025",
+    "title": "Domestic Gas Stove and Built In Hob for Use With LPG - Specification",
     "productCategory": "Household Products",
     "keywords": [
       "gas stove",
@@ -1210,11 +1256,13 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
-    "isNumber": "IS 1660",
-    "title": "Wrought Aluminium Utensils - Specification",
+    "isNumber": "IS 1660:2024",
+    "title": "Wrought and Cast Aluminium Utensils - Specification",
     "productCategory": "Household Products",
     "keywords": [
       "aluminium utensil",
@@ -1223,10 +1271,10 @@
       "kadai",
       "utensil"
     ],
-    "scope": "Wrought aluminium utensils.",
+    "scope": "Wrought and cast aluminium utensils.",
     "requirements": [
       "Product requirements, tests and marking should be verified against the current edition of the standard.",
-      "Check whether certification is mandatory for your exact product before launch."
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
     ],
     "evidenceNeeded": [
       "Product specification",
@@ -1237,11 +1285,13 @@
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
     "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
-    "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)",
-    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO: Aluminium utensils QCO, implementation date 1 October 2026",
+    "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text.",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
     "isNumber": "IS 4151",
@@ -1272,6 +1322,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -1287,7 +1339,7 @@
     "scope": "Safety footwear for industrial use.",
     "requirements": [
       "Product requirements, tests and marking should be verified against the current edition of the standard.",
-      "Check whether certification is mandatory for your exact product before launch."
+      "Products covered by the QCO/CRS order cannot be manufactured, sold or imported without valid BIS certification."
     ],
     "evidenceNeeded": [
       "Product specification",
@@ -1298,11 +1350,13 @@
     "authority": "Bureau of Indian Standards (BIS)",
     "sourceType": "Official BIS source",
     "notes": "Verify the current edition, amendments and applicability on the official BIS portal.",
-    "certificationStatus": "Verification Required",
-    "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
-    "mandatory": false,
-    "scheme": "Voluntary ISI certification (verify)",
-    "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
+    "certificationStatus": "Compulsory BIS certification (ISI mark) - verify current QCO",
+    "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
+    "mandatory": true,
+    "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO: Personal Protective Equipment (safety footwear) QCO covering IS 15298 Parts 2, 3 and 4",
+    "enterpriseRelief": "QCOs often give micro and small enterprises later implementation dates. Check the order text.",
+    "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
     "isNumber": "IS 15683",
@@ -1330,6 +1384,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -1364,6 +1420,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
     "general": true
   },
@@ -1395,10 +1453,12 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
-    "isNumber": "IS 2062",
+    "isNumber": "IS 2062 (Part 1):2025",
     "title": "Hot Rolled Medium and High Tensile Structural Steel - Specification",
     "productCategory": "Manufacturing",
     "keywords": [
@@ -1428,6 +1488,8 @@
     "qcoStatus": "Covered by a Quality Control Order issued under Section 16 of the BIS Act, 2016. Verify the current order, dates and any MSME relaxations.",
     "mandatory": true,
     "scheme": "ISI Mark (Scheme I)",
+    "regulatoryBasis": "QCO under Section 16 of the BIS Act, 2016 (verify order)",
+    "enterpriseRelief": "Check the QCO for MSME transition dates.",
     "sourceUrl": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
   },
   {
@@ -1458,6 +1520,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -1490,6 +1553,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/"
   },
   {
@@ -1521,6 +1585,7 @@
     "qcoStatus": "No Quality Control Order confirmed in this knowledge base. Verification Required.",
     "mandatory": false,
     "scheme": "Voluntary ISI certification (verify)",
+    "regulatoryBasis": "None identified",
     "sourceUrl": "https://www.services.bis.gov.in/php/BIS_2.0/bisconnect/knowyourstandards/Indian_standards/isdetails/",
     "general": true
   },

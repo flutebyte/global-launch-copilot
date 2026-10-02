@@ -9,11 +9,11 @@
   "scales": {
     "small": {
       "label": "Small scale (micro / small unit)",
-      "summary": "Micro unit: investment up to Rs 2.5 crore and turnover up to Rs 10 crore. Small unit: investment up to Rs 25 crore and turnover up to Rs 100 crore (Udyam limits revised in 2025; verify current limits)."
+      "summary": "Micro unit: investment up to Rs 2.5 crore and turnover up to Rs 10 crore. Small unit: investment up to Rs 25 crore and turnover up to Rs 100 crore (limits effective 1 April 2025). A unit must satisfy BOTH the investment and the turnover limit."
     },
     "medium": {
       "label": "Medium scale",
-      "summary": "Medium unit: investment up to Rs 125 crore and turnover up to Rs 500 crore (Udyam limits revised in 2025; verify current limits)."
+      "summary": "Medium unit: investment up to Rs 125 crore and turnover up to Rs 500 crore (limits effective 1 April 2025). A unit must satisfy BOTH the investment and the turnover limit."
     },
     "large": {
       "label": "Large scale",
@@ -26,168 +26,270 @@
       "detail": "Free online registration. Gives access to MSME benefits such as BIS fee concessions, priority lending and protection against delayed payments.",
       "authority": "Ministry of MSME",
       "sourceUrl": "https://udyamregistration.gov.in/",
-      "scales": ["small", "medium"],
-      "categories": ["*"]
+      "scales": [
+        "small",
+        "medium"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "BIS certification fee concessions for MSMEs",
       "detail": "BIS gives micro, small and medium units a concession on the annual minimum marking fee (largest for micro units). Some QCOs also give micro and small units extra time to comply. Check the current percentages and the QCO for your product.",
       "authority": "Bureau of Indian Standards (BIS)",
       "sourceUrl": "https://www.bis.gov.in/",
-      "scales": ["small", "medium"],
-      "categories": ["*"]
+      "scales": [
+        "small",
+        "medium"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "BIS licence: in-house testing and factory inspection",
       "detail": "For an ISI mark licence, BIS normally expects the testing facilities listed in the product's Scheme of Testing and Inspection, a factory inspection and a sample test at a BIS lab. Small units can check whether outsourced testing of some tests is permitted for their product.",
       "authority": "Bureau of Indian Standards (BIS)",
       "sourceUrl": "https://www.manakonline.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["Electrical Appliances", "Construction Materials", "Household Products", "Safety Equipment", "Toys", "Manufacturing"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "Electrical Appliances",
+        "Construction Materials",
+        "Household Products",
+        "Safety Equipment",
+        "Toys",
+        "Manufacturing"
+      ]
     },
     {
       "title": "GST registration",
       "detail": "Required once aggregate turnover crosses Rs 40 lakh for goods (Rs 20 lakh in special category states), and for inter-state supply of goods regardless of turnover.",
       "authority": "GST Council / CBIC",
       "sourceUrl": "https://www.gst.gov.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["*"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "Pollution control consent (CTE / CTO)",
       "detail": "Consent to Establish and Consent to Operate from the State Pollution Control Board, based on whether the industry is in the Red, Orange, Green or White category. White category units usually only need to inform the board.",
       "authority": "State Pollution Control Board",
       "sourceUrl": "https://cpcb.nic.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["*"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "Factory registration and licence",
       "detail": "Needed under the Factories Act / state factory rules once the unit has 10 or more workers with power, or 20 or more without power.",
       "authority": "State Factories / Labour Department",
       "sourceUrl": "https://labour.gov.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["*"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "EPF and ESI registration",
       "detail": "ESI applies once the unit has 10 or more employees and EPF once it has 20 or more.",
       "authority": "EPFO / ESIC",
       "sourceUrl": "https://www.epfindia.gov.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["*"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "Fire NOC",
       "detail": "Fire safety clearance from the state fire service, usually required for larger premises or units handling flammable materials.",
       "authority": "State Fire and Emergency Services",
       "sourceUrl": "",
-      "scales": ["medium", "large"],
-      "categories": ["*"]
+      "scales": [
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "Quality management system (IS/ISO 9001)",
       "detail": "Not legally required for most products, but expected by large buyers and many government tenders, and it makes the BIS factory inspection easier.",
       "authority": "Accredited certification body",
       "sourceUrl": "",
-      "scales": ["medium", "large"],
-      "categories": ["*"]
+      "scales": [
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "Environmental Clearance",
       "detail": "Required before setting up projects listed in the EIA Notification, 2006 (for example cement plants, large metal and chemical units).",
       "authority": "Ministry of Environment, Forest and Climate Change / SEIAA",
       "sourceUrl": "https://parivesh.nic.in/",
-      "scales": ["large"],
-      "categories": ["*"]
+      "scales": [
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
       "title": "Corporate Social Responsibility (CSR)",
       "detail": "Companies with net worth of Rs 500 crore or more, turnover of Rs 1,000 crore or more, or net profit of Rs 5 crore or more must spend on CSR under Section 135 of the Companies Act, 2013.",
       "authority": "Ministry of Corporate Affairs",
       "sourceUrl": "https://www.mca.gov.in/",
-      "scales": ["large"],
-      "categories": ["*"]
+      "scales": [
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     },
     {
-      "title": "FSSAI Basic Registration or State Licence",
-      "detail": "Basic Registration for very small food businesses (turnover up to Rs 12 lakh). State Licence for turnover from Rs 12 lakh up to Rs 20 crore. Manufacturing capacity limits also apply; check FoSCoS.",
+      "title": "FSSAI registration or licence (based on your food turnover, not MSME size)",
+      "detail": "From 1 April 2026: Registration up to Rs 1.5 crore annual turnover; State Licence above Rs 1.5 crore up to Rs 50 crore; Central Licence above Rs 50 crore (and for importers/exporters). Registrations and licences now have perpetual validity instead of periodic renewal. Decide the tier from FSSAI's own turnover/capacity rules: an MSME 'small' unit can still need a Central Licence.",
       "authority": "Food Safety and Standards Authority of India (FSSAI)",
       "sourceUrl": "https://foscos.fssai.gov.in/",
-      "scales": ["small"],
-      "categories": ["Food & Beverages"]
-    },
-    {
-      "title": "FSSAI State Licence",
-      "detail": "State Licence for turnover from Rs 12 lakh up to Rs 20 crore, subject to manufacturing capacity limits. Above that a Central Licence is needed.",
-      "authority": "Food Safety and Standards Authority of India (FSSAI)",
-      "sourceUrl": "https://foscos.fssai.gov.in/",
-      "scales": ["medium"],
-      "categories": ["Food & Beverages"]
-    },
-    {
-      "title": "FSSAI Central Licence",
-      "detail": "Central Licence for turnover above Rs 20 crore, large manufacturing capacity, or import/export of food.",
-      "authority": "Food Safety and Standards Authority of India (FSSAI)",
-      "sourceUrl": "https://foscos.fssai.gov.in/",
-      "scales": ["large"],
-      "categories": ["Food & Beverages"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "Food & Beverages"
+      ]
     },
     {
       "title": "Food testing and hygiene",
       "detail": "Schedule 4 hygiene and sanitary practices under the FSSAI licensing regulations, periodic testing at an FSSAI-notified lab, and a Food Safety Supervisor for licensed units.",
       "authority": "Food Safety and Standards Authority of India (FSSAI)",
       "sourceUrl": "https://www.fssai.gov.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["Food & Beverages"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "Food & Beverages"
+      ]
     },
     {
       "title": "Cosmetics manufacturing licence",
       "detail": "Licence from the State Licensing Authority under the Cosmetics Rules, 2020 at every scale, with a qualified technical person and testing arrangements.",
       "authority": "State Licensing Authority / CDSCO",
       "sourceUrl": "https://cdsco.gov.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["Cosmetics"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "Cosmetics"
+      ]
     },
     {
       "title": "Medical device licence by risk class",
       "detail": "Class A and B devices: licence from the State Licensing Authority. Class C and D devices: licence from CDSCO. An IS/ISO 13485 quality system is expected at every scale.",
       "authority": "Central Drugs Standard Control Organisation (CDSCO)",
       "sourceUrl": "https://cdsco.gov.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["Medical Products"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "Medical Products"
+      ]
     },
     {
       "title": "BIS Compulsory Registration (CRS)",
       "detail": "Each brand and model of notified electronics must be tested at a BIS-recognised lab and registered before sale. There is no MSME exemption, but lab costs are per model, so small units should limit variants at launch.",
       "authority": "Bureau of Indian Standards (BIS)",
       "sourceUrl": "https://www.crsbis.in/BIS/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["Electronics", "Electrical Appliances"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "Electronics",
+        "Electrical Appliances"
+      ]
     },
     {
       "title": "E-waste EPR registration",
       "detail": "Producers of electrical and electronic equipment must register on the CPCB EPR portal under the E-Waste (Management) Rules, 2022 and meet recycling targets.",
       "authority": "Central Pollution Control Board (CPCB)",
       "sourceUrl": "https://eprewastecpcb.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["Electronics", "Electrical Appliances", "Toys"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "Electronics",
+        "Electrical Appliances",
+        "Toys"
+      ]
     },
     {
       "title": "Plastic packaging EPR registration",
       "detail": "Producers, importers and brand owners using plastic packaging must register on the CPCB EPR portal under the Plastic Waste Management Rules. Check whether any exemption applies to your unit size.",
       "authority": "Central Pollution Control Board (CPCB)",
       "sourceUrl": "https://eprplastic.cpcb.gov.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["Food & Beverages", "Cosmetics", "Household Products", "Toys", "Clothing & Apparel"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "Food & Beverages",
+        "Cosmetics",
+        "Household Products",
+        "Toys",
+        "Clothing & Apparel"
+      ]
     },
     {
       "title": "Legal Metrology packer registration",
       "detail": "Manufacturers and packers of pre-packaged goods register with the Legal Metrology department and print the mandatory declarations (MRP, net quantity, date, address, customer care).",
       "authority": "Department of Consumer Affairs - Legal Metrology",
       "sourceUrl": "https://consumeraffairs.nic.in/",
-      "scales": ["small", "medium", "large"],
-      "categories": ["*"]
+      "scales": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "categories": [
+        "*"
+      ]
     }
   ]
 }

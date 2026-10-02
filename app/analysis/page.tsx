@@ -18,6 +18,8 @@ type Standard = {
   qcoStatus?: string;
   mandatory?: boolean;
   scheme?: string;
+  regulatoryBasis?: string;
+  enterpriseRelief?: string;
   general?: boolean;
   notes?: string;
   sourceType?: string;
@@ -746,11 +748,48 @@ function AnalysisPageContent() {
                         </div>
                       </div>
 
-                      {standard.scheme && (
-                        <p className="mt-3 text-xs font-semibold text-slate-600">
-                          Scheme: {standard.scheme}
-                        </p>
-                      )}
+                      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                        <div className="rounded-xl bg-white p-3">
+                          <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                            Indian Standard
+                          </p>
+                          <p className="mt-1 text-sm font-semibold text-slate-800">
+                            {standard.isNumber}
+                          </p>
+                        </div>
+
+                        <div className="rounded-xl bg-white p-3">
+                          <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                            BIS Certification
+                          </p>
+                          <p className="mt-1 text-sm font-semibold text-slate-800">
+                            {standard.mandatory
+                              ? "Mandatory"
+                              : "Voluntary / Verification Required"}
+                          </p>
+                          {standard.scheme && (
+                            <p className="mt-1 text-xs text-slate-600">
+                              {standard.scheme}
+                            </p>
+                          )}
+                        </div>
+
+                        <div className="rounded-xl bg-white p-3">
+                          <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                            Regulatory Basis
+                          </p>
+                          <p className="mt-1 text-sm text-slate-700">
+                            {standard.regulatoryBasis ||
+                              standard.qcoStatus ||
+                              "None identified"}
+                          </p>
+                          {standard.enterpriseRelief && (
+                            <p className="mt-1 text-xs text-slate-600">
+                              {standard.enterpriseRelief}
+                            </p>
+                          )}
+                        </div>
+                      </div>
 
                       {standard.scope && (
                         <div className="mt-5">
